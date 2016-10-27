@@ -1,0 +1,565 @@
+27/10/2016 10:26:24  INFO [main] Server: jetty-9.0.0.RC2
+27/10/2016 10:26:24  INFO [main] ContextHandler: started o.e.j.s.ServletContextHandler@69a380{/,null,AVAILABLE}
+27/10/2016 10:26:24  INFO [main] ServerConnector: Started ServerConnector@62e21b{HTTP/1.1}{0.0.0.0:8099}
+27/10/2016 10:26:24  INFO [main] ACSServletPublisher: ACS Servlet started, on PORT: 8099
+27/10/2016 10:26:24  INFO [main] ACSWebServicePublisher: Webservice Address: http://0.0.0.0:82/acsService
+27/10/2016 10:26:25  INFO [main] FileSystemXmlApplicationContext: Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@1f35ded: startup date [Thu Oct 27 10:26:25 ICT 2016]; root of context hierarchy
+27/10/2016 10:26:25  INFO [main] XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [applicationContext-stbacs.xml]
+27/10/2016 10:26:26  INFO [main] XmlBeanDefinitionReader: Loading XML bean definitions from URL [jar:file:/C:/Users/SSDC/.m2/repository/vn/vnpttech/ssdc/nms/FirmwareToolONT-core/1.0.0/FirmwareToolONT-core-1.0.0.jar!/applicationContext-service.xml]
+27/10/2016 10:26:26  INFO [main] XmlBeanDefinitionReader: Loading XML bean definitions from URL [jar:file:/C:/Users/SSDC/.m2/repository/vn/vnpttech/ssdc/nms/FirmwareToolONT-core/1.0.0/FirmwareToolONT-core-1.0.0.jar!/applicationContext-dao.xml]
+27/10/2016 10:26:26  INFO [main] XmlBeanDefinitionReader: Loading XML bean definitions from URL [jar:file:/C:/Users/SSDC/.m2/repository/vn/vnpttech/ssdc/nms/FirmwareToolONT-core/1.0.0/FirmwareToolONT-core-1.0.0.jar!/applicationContext.xml]
+27/10/2016 10:26:27  INFO [main] DefaultListableBeanFactory: Overriding bean definition for bean 'areaDeviceMappingDao': replacing [Generic bean: class [vn.vnpttech.ssdc.nms.dao.hibernate.AreaDeviceMappingDaoHibernate]; scope=singleton; abstract=false; lazyInit=true; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/C:/Users/SSDC/.m2/repository/vn/vnpttech/ssdc/nms/FirmwareToolONT-core/1.0.0/FirmwareToolONT-core-1.0.0.jar!/vn/vnpttech/ssdc/nms/dao/hibernate/AreaDeviceMappingDaoHibernate.class]] with [Generic bean: class [vn.vnpttech.ssdc.nms.dao.hibernate.AreaDeviceMappingDaoHibernate]; scope=; abstract=false; lazyInit=true; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/C:/Users/SSDC/.m2/repository/vn/vnpttech/ssdc/nms/FirmwareToolONT-core/1.0.0/FirmwareToolONT-core-1.0.0.jar!/applicationContext.xml]]
+27/10/2016 10:26:28  INFO [main] PropertyPlaceholderConfigurer: Loading properties file from class path resource [jdbc.properties]
+27/10/2016 10:26:28  INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.orm.hibernate4.HibernateExceptionTranslator#0' of type [class org.springframework.orm.hibernate4.HibernateExceptionTranslator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27/10/2016 10:26:29  INFO [main] DriverManagerDataSource: Loaded JDBC driver: com.mysql.jdbc.Driver
+27/10/2016 10:26:29  INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'dataSource' of type [class org.springframework.jdbc.datasource.DriverManagerDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27/10/2016 10:26:29  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+27/10/2016 10:26:29  INFO [main] Version: HHH000412: Hibernate Core {4.3.6.Final}
+27/10/2016 10:26:29  INFO [main] Environment: HHH000206: hibernate.properties not found
+27/10/2016 10:26:29  INFO [main] Environment: HHH000021: Bytecode provider name : javassist
+27/10/2016 10:26:30  INFO [main] Configuration: HHH000044: Configuring from URL: jar:file:/C:/Users/SSDC/.m2/repository/vn/vnpttech/ssdc/nms/FirmwareToolONT-core/1.0.0/FirmwareToolONT-core-1.0.0.jar!/hibernate.cfg.xml
+27/10/2016 10:26:30  INFO [main] Configuration: HHH000041: Configured SessionFactory: null
+27/10/2016 10:26:30  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: com.zaxxer.hikari.hibernate.HikariConnectionProvider
+27/10/2016 10:26:30  INFO [main] HikariDataSource: HikariPool-0 - is starting.
+27/10/2016 10:26:32  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+27/10/2016 10:26:33  INFO [main] TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+27/10/2016 10:26:33  INFO [main] ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+27/10/2016 10:26:33  WARN [main] SettingsFactory: Unrecognized value for "hibernate.hbm2ddl.auto": none
+27/10/2016 10:26:34  INFO [main] Version: HSEARCH000034: Hibernate Search 4.5.1.Final
+27/10/2016 10:26:35  WARN [main] ConfigContext: HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified, using LUCENE_CURRENT.
+27/10/2016 10:26:37  INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'sessionFactory' of type [class org.springframework.orm.hibernate4.LocalSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27/10/2016 10:26:38  INFO [main] HibernateTransactionManager: Using DataSource [HikariDataSource (HikariPool-0)] of Hibernate SessionFactory for HibernateTransactionManager
+27/10/2016 10:26:43  INFO [main] ACSWebServicePublisher: ACS Webservice started !
+27/10/2016 10:28:06  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:28:06  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  37
+27/10/2016 10:28:07  WARN [pool-2-thread-1] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:28:07  INFO [pool-2-thread-1] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:28:07  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:28:07  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:28:07  INFO [pool-2-thread-2] ACSServlet: TIME TO SEARCH DEVICE BY SERIAL = 626
+27/10/2016 10:28:07  INFO [pool-2-thread-2] ACSServlet: EVENT_0: BOOTSTRAP, SN=(null), MANU=Broadcom, Create New Device
+27/10/2016 10:28:08  INFO [pool-2-thread-2] DeviceDaoHibernate: time to get session (insert device): 0
+27/10/2016 10:28:08  INFO [pool-2-thread-2] DeviceDaoHibernate: time to insert device: 47
+27/10/2016 10:28:08  INFO [pool-2-thread-2] ACSServlet: [Disable wifi vinaphone]Start get parameter
+27/10/2016 10:28:08  INFO [pool-2-thread-2] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.]
+27/10/2016 10:28:08  INFO [pool-2-thread-2] ACSServlet: TIME EVENT 0 BOOTTRAP = 817
+27/10/2016 10:28:08  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:28:08  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:28:16  INFO [pool-2-thread-3] ACSServlet: [Disable wifi vinaphone] Start parse result
+27/10/2016 10:28:16  INFO [pool-2-thread-3] ACSServlet: [Disable wifi vinaphone] path null
+27/10/2016 10:28:16  INFO [pool-2-thread-3] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477538896963
+27/10/2016 10:28:17  INFO [pool-2-thread-3] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:28:17  INFO [pool-2-thread-3] Command: Get Tree Value, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:28:28  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:28:28  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  2
+27/10/2016 10:28:28  WARN [pool-2-thread-4] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:28:28  INFO [pool-2-thread-4] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:28:28  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:28:28  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:28:28  INFO [pool-2-thread-5] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.Layer2Bridging.]
+27/10/2016 10:28:28  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:28:28  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:28:32  INFO [pool-2-thread-6] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 15892
+27/10/2016 10:28:32  INFO [pool-2-thread-3] Command: Get Tree Value, SerialNumber=(null), Success. Execute time: 15893ms
+27/10/2016 10:28:33  INFO [pool-2-thread-3] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477538913024
+27/10/2016 10:28:33  INFO [pool-2-thread-3] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:28:33  INFO [pool-2-thread-3] Command: Get Tree Value, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:28:33  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:28:33  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:28:33  WARN [pool-2-thread-7] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:28:33  INFO [pool-2-thread-7] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:28:33  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:28:33  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:28:33  INFO [pool-2-thread-8] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.ExternalIPAddress][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.3.X_BROADCOM_COM_IfName][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.2.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.ExternalIPAddress][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.1.X_BROADCOM_COM_IfName][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.3.WlIfcname][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.2.WlIfcname][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.1.WlIfcname][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.4.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.ExternalIPAddress][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.4.WlIfcname]
+27/10/2016 10:28:33  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:28:33  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:28:35  INFO [pool-2-thread-9] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 2163
+27/10/2016 10:28:35  INFO [pool-2-thread-3] Command: Get Tree Value, SerialNumber=(null), Success. Execute time: 2164ms
+27/10/2016 10:28:35  INFO [pool-2-thread-3] ServiceConfigGateway: configDefautGateway: ppp1.7, sn= (null)
+27/10/2016 10:28:35  INFO [pool-2-thread-3] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477538915189
+27/10/2016 10:28:35  INFO [pool-2-thread-3] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:28:35  INFO [pool-2-thread-3] Command: Set Value, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:28:35  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:28:35  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:28:35  WARN [pool-2-thread-10] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:28:35  INFO [pool-2-thread-10] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:28:35  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:28:35  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:28:35  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:28:35  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:28:35  INFO [pool-2-thread-12] ACSServlet: [SetParameterResposne] Status 0
+27/10/2016 10:28:35  INFO [pool-2-thread-12] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 629
+27/10/2016 10:28:35  INFO [pool-2-thread-3] Command: Set Value, SerialNumber=(null), Success. Execute time: 629ms
+27/10/2016 10:28:35  INFO [pool-2-thread-3] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477538915818
+27/10/2016 10:28:37  INFO [pool-2-thread-3] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:28:37  INFO [pool-2-thread-3] Command: Reboot Device, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:28:37  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:28:37  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:28:37  WARN [pool-2-thread-13] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:28:37  INFO [pool-2-thread-13] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:28:37  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:28:37  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:28:37  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:28:37  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:28:37  INFO [pool-2-thread-15] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 1675
+27/10/2016 10:28:37  INFO [pool-2-thread-3] Command: Reboot Device, SerialNumber=(null), Success. Execute time: 1675ms
+27/10/2016 10:28:37  INFO [pool-2-thread-3] ACSServlet: [Disable wifi vionaphone] TIME  = 20699
+27/10/2016 10:29:11  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:29:11  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  10
+27/10/2016 10:29:11  WARN [pool-2-thread-16] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:29:11  INFO [pool-2-thread-16] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:29:11  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:29:11  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:29:11  INFO [pool-2-thread-17] ACSServlet:  ....  commadnkey for mboot SET_GATEWAY
+27/10/2016 10:29:11  INFO [pool-2-thread-17] ACSServlet: BOOT: Update device info, serialNumber=(null)
+27/10/2016 10:29:11  INFO [pool-2-thread-17] ACSServlet: 1 BOOT, SN=(null), MANU=Broadcom, Create New Device
+27/10/2016 10:29:11  INFO [pool-2-thread-17] DeviceDaoHibernate: time to get session (insert device): 0
+27/10/2016 10:29:11  INFO [pool-2-thread-17] DeviceDaoHibernate: time to insert device: 10
+27/10/2016 10:29:11  INFO [pool-2-thread-17] ACSServlet: [Disable wifi vinaphone]Start get parameter
+27/10/2016 10:29:11  INFO [pool-2-thread-17] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.]
+27/10/2016 10:29:12  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:29:12  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:29:20  INFO [pool-2-thread-18] ACSServlet: [Disable wifi vinaphone] Start parse result
+27/10/2016 10:29:20  INFO [pool-2-thread-18] ACSServlet: [Disable wifi vinaphone] path null
+27/10/2016 10:29:20  INFO [pool-2-thread-18] ACSServlet: Device is set gateway and reboot
+27/10/2016 10:29:20  INFO [pool-2-thread-18] ACSServlet: [Disable wifi vionaphone] TIME  = 2
+27/10/2016 10:30:35  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:30:35  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  3
+27/10/2016 10:30:35  WARN [pool-2-thread-19] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:30:35  INFO [pool-2-thread-19] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:30:35  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:30:35  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:30:35  INFO [pool-2-thread-20] ACSServlet:  ....  commadnkey for mboot null
+27/10/2016 10:30:35  INFO [pool-2-thread-20] ACSServlet: BOOT: Update device info, serialNumber=(null)
+27/10/2016 10:30:35  INFO [pool-2-thread-20] ACSServlet: 1 BOOT, SN=(null), MANU=Broadcom, Create New Device
+27/10/2016 10:30:35  INFO [pool-2-thread-20] DeviceDaoHibernate: time to get session (insert device): 0
+27/10/2016 10:30:35  INFO [pool-2-thread-20] DeviceDaoHibernate: time to insert device: 7
+27/10/2016 10:30:35  INFO [pool-2-thread-20] ACSServlet: [Disable wifi vinaphone]Start get parameter
+27/10/2016 10:30:35  INFO [pool-2-thread-20] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.]
+27/10/2016 10:30:35  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:30:35  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:30:44  INFO [pool-2-thread-21] ACSServlet: [Disable wifi vinaphone] Start parse result
+27/10/2016 10:30:44  INFO [pool-2-thread-21] ACSServlet: [Disable wifi vinaphone] path null
+27/10/2016 10:30:44  INFO [pool-2-thread-21] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477539044206
+27/10/2016 10:30:44  INFO [pool-2-thread-21] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:30:44  INFO [pool-2-thread-21] Command: Get Tree Value, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:30:55  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:30:55  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  3
+27/10/2016 10:30:55  WARN [pool-2-thread-22] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:30:55  INFO [pool-2-thread-22] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:30:55  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:30:55  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:30:55  INFO [pool-2-thread-23] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.Layer2Bridging.]
+27/10/2016 10:30:55  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:30:55  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:31:00  INFO [pool-2-thread-24] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 15909
+27/10/2016 10:31:00  INFO [pool-2-thread-21] Command: Get Tree Value, SerialNumber=(null), Success. Execute time: 15910ms
+27/10/2016 10:31:00  INFO [pool-2-thread-21] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477539060118
+27/10/2016 10:31:00  INFO [pool-2-thread-21] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:31:00  INFO [pool-2-thread-21] Command: Get Tree Value, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:31:00  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:31:00  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  2
+27/10/2016 10:31:00  WARN [pool-2-thread-25] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:31:00  INFO [pool-2-thread-25] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:31:00  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:31:00  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:31:00  INFO [pool-2-thread-26] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.ExternalIPAddress][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.3.X_BROADCOM_COM_IfName][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.2.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.ExternalIPAddress][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.1.X_BROADCOM_COM_IfName][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.3.WlIfcname][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.2.WlIfcname][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.1.WlIfcname][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.4.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.ExternalIPAddress][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.4.WlIfcname]
+27/10/2016 10:31:01  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:31:01  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:31:02  INFO [pool-2-thread-27] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 2093
+27/10/2016 10:31:02  INFO [pool-2-thread-21] Command: Get Tree Value, SerialNumber=(null), Success. Execute time: 2095ms
+27/10/2016 10:31:02  INFO [pool-2-thread-21] ServiceConfigGateway: configDefautGateway: ppp1.7, sn= (null)
+27/10/2016 10:31:02  INFO [pool-2-thread-21] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477539062215
+27/10/2016 10:31:02  INFO [pool-2-thread-21] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:31:02  INFO [pool-2-thread-21] Command: Set Value, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:31:02  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:31:02  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:31:02  WARN [pool-2-thread-28] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:31:02  INFO [pool-2-thread-28] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:31:02  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:31:02  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:31:02  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:31:02  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:31:02  INFO [pool-2-thread-30] ACSServlet: [SetParameterResposne] Status 0
+27/10/2016 10:31:02  INFO [pool-2-thread-30] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 627
+27/10/2016 10:31:02  INFO [pool-2-thread-21] Command: Set Value, SerialNumber=(null), Success. Execute time: 628ms
+27/10/2016 10:31:02  INFO [pool-2-thread-21] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477539062843
+27/10/2016 10:31:04  INFO [pool-2-thread-21] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:31:04  INFO [pool-2-thread-21] Command: Reboot Device, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:31:04  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:31:04  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:31:04  WARN [pool-2-thread-31] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:31:04  INFO [pool-2-thread-31] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:31:04  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:31:04  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:31:04  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:31:04  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:31:04  INFO [pool-2-thread-33] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 2005
+27/10/2016 10:31:04  INFO [pool-2-thread-21] Command: Reboot Device, SerialNumber=(null), Success. Execute time: 2005ms
+27/10/2016 10:31:04  INFO [pool-2-thread-21] ACSServlet: [Disable wifi vionaphone] TIME  = 20702
+27/10/2016 10:31:38  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:31:38  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  3
+27/10/2016 10:31:38  WARN [pool-2-thread-34] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:31:38  INFO [pool-2-thread-34] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:31:38  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:31:38  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:31:38  INFO [pool-2-thread-35] ACSServlet:  ....  commadnkey for mboot SET_GATEWAY
+27/10/2016 10:31:38  INFO [pool-2-thread-35] ACSServlet: BOOT: Update device info, serialNumber=(null)
+27/10/2016 10:31:38  INFO [pool-2-thread-35] ACSServlet: 1 BOOT, SN=(null), MANU=Broadcom, Update exists device !
+27/10/2016 10:31:38  INFO [pool-2-thread-35] ACSServlet: [Disable wifi vinaphone]Start get parameter
+27/10/2016 10:31:38  INFO [pool-2-thread-35] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.]
+27/10/2016 10:31:38  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:31:38  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:31:47  INFO [pool-2-thread-36] ACSServlet: [Disable wifi vinaphone] Start parse result
+27/10/2016 10:31:47  INFO [pool-2-thread-36] ACSServlet: [Disable wifi vinaphone] path null
+27/10/2016 10:31:47  INFO [pool-2-thread-36] ACSServlet: Device is set gateway and reboot
+27/10/2016 10:31:47  INFO [pool-2-thread-36] ACSServlet: [Disable wifi vionaphone] TIME  = 1
+27/10/2016 10:34:06  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:34:06  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  2
+27/10/2016 10:34:06  WARN [pool-2-thread-37] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:34:06  INFO [pool-2-thread-37] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:34:06  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:34:06  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:34:06  INFO [pool-2-thread-38] ACSServlet:  ....  commadnkey for mboot null
+27/10/2016 10:34:06  INFO [pool-2-thread-38] ACSServlet: BOOT: Update device info, serialNumber=(null)
+27/10/2016 10:34:06  INFO [pool-2-thread-38] ACSServlet: 1 BOOT, SN=(null), MANU=Broadcom, Update exists device !
+27/10/2016 10:34:06  INFO [pool-2-thread-38] ACSServlet: [Disable wifi vinaphone]Start get parameter
+27/10/2016 10:34:06  INFO [pool-2-thread-38] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.]
+27/10/2016 10:34:06  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:34:06  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:34:15  INFO [pool-2-thread-39] ACSServlet: [Disable wifi vinaphone] Start parse result
+27/10/2016 10:34:15  INFO [pool-2-thread-39] ACSServlet: [Disable wifi vinaphone] path null
+27/10/2016 10:34:15  INFO [pool-2-thread-39] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477539255206
+27/10/2016 10:34:15  INFO [pool-2-thread-39] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:34:15  INFO [pool-2-thread-39] Command: Get Tree Value, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:34:26  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:34:26  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  2
+27/10/2016 10:34:26  WARN [pool-2-thread-40] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:34:26  INFO [pool-2-thread-40] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:34:26  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:34:26  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:34:26  INFO [pool-2-thread-41] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.Layer2Bridging.]
+27/10/2016 10:34:26  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:34:26  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:34:31  INFO [pool-2-thread-42] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 15904
+27/10/2016 10:34:31  INFO [pool-2-thread-39] Command: Get Tree Value, SerialNumber=(null), Success. Execute time: 15904ms
+27/10/2016 10:34:31  INFO [pool-2-thread-39] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477539271111
+27/10/2016 10:34:31  INFO [pool-2-thread-39] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:34:31  INFO [pool-2-thread-39] Command: Get Tree Value, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:34:31  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:34:31  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:34:31  WARN [pool-2-thread-43] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:34:31  INFO [pool-2-thread-43] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:34:31  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:34:31  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:34:31  INFO [pool-2-thread-44] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.ExternalIPAddress][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.3.X_BROADCOM_COM_IfName][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.2.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.ExternalIPAddress][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.1.X_BROADCOM_COM_IfName][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.3.WlIfcname][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.2.WlIfcname][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.1.WlIfcname][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.4.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.ExternalIPAddress][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.4.WlIfcname]
+27/10/2016 10:34:32  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:34:32  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:34:33  INFO [pool-2-thread-45] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 2147
+27/10/2016 10:34:33  INFO [pool-2-thread-39] Command: Get Tree Value, SerialNumber=(null), Success. Execute time: 2148ms
+27/10/2016 10:34:33  INFO [pool-2-thread-39] ServiceConfigGateway: configDefautGateway: ppp1.7, sn= (null)
+27/10/2016 10:34:33  INFO [pool-2-thread-39] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477539273259
+27/10/2016 10:34:33  INFO [pool-2-thread-39] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:34:33  INFO [pool-2-thread-39] Command: Set Value, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:34:33  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:34:33  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:34:33  WARN [pool-2-thread-46] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:34:33  INFO [pool-2-thread-46] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:34:33  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:34:33  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:34:33  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:34:33  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:34:33  INFO [pool-2-thread-48] ACSServlet: [SetParameterResposne] Status 0
+27/10/2016 10:34:33  INFO [pool-2-thread-48] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 623
+27/10/2016 10:34:33  INFO [pool-2-thread-39] Command: Set Value, SerialNumber=(null), Success. Execute time: 624ms
+27/10/2016 10:34:33  INFO [pool-2-thread-39] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477539273883
+27/10/2016 10:34:35  INFO [pool-2-thread-39] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:34:35  INFO [pool-2-thread-39] Command: Reboot Device, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:34:35  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:34:35  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:34:35  WARN [pool-2-thread-49] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:34:35  INFO [pool-2-thread-49] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:34:35  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:34:35  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:34:35  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:34:35  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:34:35  INFO [pool-2-thread-51] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 1979
+27/10/2016 10:34:35  INFO [pool-2-thread-39] Command: Reboot Device, SerialNumber=(null), Success. Execute time: 1979ms
+27/10/2016 10:34:35  INFO [pool-2-thread-39] ACSServlet: [Disable wifi vionaphone] TIME  = 20704
+27/10/2016 10:35:04  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:35:04  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  3
+27/10/2016 10:35:04  WARN [pool-2-thread-52] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:35:04  INFO [pool-2-thread-52] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:35:04  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:35:04  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:35:04  INFO [pool-2-thread-53] ACSServlet:  ....  commadnkey for mboot SET_GATEWAY
+27/10/2016 10:35:04  INFO [pool-2-thread-53] ACSServlet: BOOT: Update device info, serialNumber=(null)
+27/10/2016 10:35:04  INFO [pool-2-thread-53] ACSServlet: 1 BOOT, SN=(null), MANU=Broadcom, Update exists device !
+27/10/2016 10:35:04  INFO [pool-2-thread-53] ACSServlet: [Disable wifi vinaphone]Start get parameter
+27/10/2016 10:35:04  INFO [pool-2-thread-53] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.]
+27/10/2016 10:35:04  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:35:04  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:35:13  INFO [pool-2-thread-54] ACSServlet: [Disable wifi vinaphone] Start parse result
+27/10/2016 10:35:13  INFO [pool-2-thread-54] ACSServlet: [Disable wifi vinaphone] path null
+27/10/2016 10:35:13  INFO [pool-2-thread-54] ACSServlet: Device is set gateway and reboot
+27/10/2016 10:35:13  INFO [pool-2-thread-54] ACSServlet: [Disable wifi vionaphone] TIME  = 3
+27/10/2016 10:45:18  INFO [main] Server: jetty-9.0.0.RC2
+27/10/2016 10:45:18  INFO [main] ContextHandler: started o.e.j.s.ServletContextHandler@69a380{/,null,AVAILABLE}
+27/10/2016 10:45:19  INFO [main] ServerConnector: Started ServerConnector@62e21b{HTTP/1.1}{0.0.0.0:8099}
+27/10/2016 10:45:19  INFO [main] ACSServletPublisher: ACS Servlet started, on PORT: 8099
+27/10/2016 10:45:19  INFO [main] ACSWebServicePublisher: Webservice Address: http://0.0.0.0:82/acsService
+27/10/2016 10:45:20  INFO [main] FileSystemXmlApplicationContext: Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@191d41b: startup date [Thu Oct 27 10:45:20 ICT 2016]; root of context hierarchy
+27/10/2016 10:45:20  INFO [main] XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [applicationContext-stbacs.xml]
+27/10/2016 10:45:20  INFO [main] XmlBeanDefinitionReader: Loading XML bean definitions from URL [jar:file:/C:/Users/SSDC/.m2/repository/vn/vnpttech/ssdc/nms/FirmwareToolONT-core/1.0.0/FirmwareToolONT-core-1.0.0.jar!/applicationContext-service.xml]
+27/10/2016 10:45:21  INFO [main] XmlBeanDefinitionReader: Loading XML bean definitions from URL [jar:file:/C:/Users/SSDC/.m2/repository/vn/vnpttech/ssdc/nms/FirmwareToolONT-core/1.0.0/FirmwareToolONT-core-1.0.0.jar!/applicationContext-dao.xml]
+27/10/2016 10:45:21  INFO [main] XmlBeanDefinitionReader: Loading XML bean definitions from URL [jar:file:/C:/Users/SSDC/.m2/repository/vn/vnpttech/ssdc/nms/FirmwareToolONT-core/1.0.0/FirmwareToolONT-core-1.0.0.jar!/applicationContext.xml]
+27/10/2016 10:45:26  INFO [main] DefaultListableBeanFactory: Overriding bean definition for bean 'areaDeviceMappingDao': replacing [Generic bean: class [vn.vnpttech.ssdc.nms.dao.hibernate.AreaDeviceMappingDaoHibernate]; scope=singleton; abstract=false; lazyInit=true; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/C:/Users/SSDC/.m2/repository/vn/vnpttech/ssdc/nms/FirmwareToolONT-core/1.0.0/FirmwareToolONT-core-1.0.0.jar!/vn/vnpttech/ssdc/nms/dao/hibernate/AreaDeviceMappingDaoHibernate.class]] with [Generic bean: class [vn.vnpttech.ssdc.nms.dao.hibernate.AreaDeviceMappingDaoHibernate]; scope=; abstract=false; lazyInit=true; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/C:/Users/SSDC/.m2/repository/vn/vnpttech/ssdc/nms/FirmwareToolONT-core/1.0.0/FirmwareToolONT-core-1.0.0.jar!/applicationContext.xml]]
+27/10/2016 10:45:27  INFO [main] PropertyPlaceholderConfigurer: Loading properties file from class path resource [jdbc.properties]
+27/10/2016 10:45:27  INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.orm.hibernate4.HibernateExceptionTranslator#0' of type [class org.springframework.orm.hibernate4.HibernateExceptionTranslator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27/10/2016 10:45:27  INFO [main] DriverManagerDataSource: Loaded JDBC driver: com.mysql.jdbc.Driver
+27/10/2016 10:45:27  INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'dataSource' of type [class org.springframework.jdbc.datasource.DriverManagerDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27/10/2016 10:45:27  INFO [main] Version: HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+27/10/2016 10:45:27  INFO [main] Version: HHH000412: Hibernate Core {4.3.6.Final}
+27/10/2016 10:45:27  INFO [main] Environment: HHH000206: hibernate.properties not found
+27/10/2016 10:45:27  INFO [main] Environment: HHH000021: Bytecode provider name : javassist
+27/10/2016 10:45:27  INFO [main] Configuration: HHH000044: Configuring from URL: jar:file:/C:/Users/SSDC/.m2/repository/vn/vnpttech/ssdc/nms/FirmwareToolONT-core/1.0.0/FirmwareToolONT-core-1.0.0.jar!/hibernate.cfg.xml
+27/10/2016 10:45:28  INFO [main] Configuration: HHH000041: Configured SessionFactory: null
+27/10/2016 10:45:28  INFO [main] ConnectionProviderInitiator: HHH000130: Instantiating explicit connection provider: com.zaxxer.hikari.hibernate.HikariConnectionProvider
+27/10/2016 10:45:28  INFO [main] HikariDataSource: HikariPool-0 - is starting.
+27/10/2016 10:45:29  INFO [main] Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+27/10/2016 10:45:30  INFO [main] TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+27/10/2016 10:45:30  INFO [main] ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+27/10/2016 10:45:30  WARN [main] SettingsFactory: Unrecognized value for "hibernate.hbm2ddl.auto": none
+27/10/2016 10:45:30  INFO [main] Version: HSEARCH000034: Hibernate Search 4.5.1.Final
+27/10/2016 10:45:31  WARN [main] ConfigContext: HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified, using LUCENE_CURRENT.
+27/10/2016 10:45:32  INFO [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'sessionFactory' of type [class org.springframework.orm.hibernate4.LocalSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27/10/2016 10:45:33  INFO [main] HibernateTransactionManager: Using DataSource [HikariDataSource (HikariPool-0)] of Hibernate SessionFactory for HibernateTransactionManager
+27/10/2016 10:45:34  INFO [main] ACSWebServicePublisher: ACS Webservice started !
+27/10/2016 10:46:46  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:46:46  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  14
+27/10/2016 10:46:46  WARN [pool-2-thread-1] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:46:46  INFO [pool-2-thread-1] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:46:46  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:46:46  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:46:46  INFO [pool-2-thread-2] ACSServlet:  ....  commadnkey for mboot null
+27/10/2016 10:46:47  INFO [pool-2-thread-2] ACSServlet: BOOT: Update device info, serialNumber=(null)
+27/10/2016 10:46:47  INFO [pool-2-thread-2] ACSServlet: 1 BOOT, SN=(null), MANU=Broadcom, Update exists device !
+27/10/2016 10:46:47  INFO [pool-2-thread-2] ACSServlet: [Disable wifi vinaphone]Start get parameter
+27/10/2016 10:46:47  INFO [pool-2-thread-2] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.]
+27/10/2016 10:46:47  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:46:47  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:46:56  INFO [pool-2-thread-3] ACSServlet: [Disable wifi vinaphone] Start parse result
+27/10/2016 10:46:56  INFO [pool-2-thread-3] ACSServlet: [Disable wifi vinaphone] path null
+27/10/2016 10:46:56  INFO [pool-2-thread-3] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477540016078
+27/10/2016 10:46:56  INFO [pool-2-thread-3] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:46:56  INFO [pool-2-thread-3] Command: Get Tree Value, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:47:07  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:47:07  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:47:07  WARN [pool-2-thread-4] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:47:07  INFO [pool-2-thread-4] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:47:07  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:47:07  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:47:07  INFO [pool-2-thread-5] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.Layer2Bridging.]
+27/10/2016 10:47:07  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:47:07  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:47:11  INFO [pool-2-thread-6] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 15876
+27/10/2016 10:47:11  INFO [pool-2-thread-3] Command: Get Tree Value, SerialNumber=(null), Success. Execute time: 15877ms
+27/10/2016 10:47:11  INFO [pool-2-thread-3] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477540031971
+27/10/2016 10:47:11  INFO [pool-2-thread-3] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:47:11  INFO [pool-2-thread-3] Command: Get Tree Value, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:47:12  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:47:12  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:47:12  WARN [pool-2-thread-7] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:47:12  INFO [pool-2-thread-7] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:47:12  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:47:12  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:47:12  INFO [pool-2-thread-8] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.6.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.ExternalIPAddress][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.3.X_BROADCOM_COM_IfName][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.2.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.ExternalIPAddress][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.1.X_BROADCOM_COM_IfName][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.3.WlIfcname][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.2.WlIfcname][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.1.WlIfcname][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.4.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.ExternalIPAddress][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.4.WlIfcname]
+27/10/2016 10:47:12  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:47:12  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:47:14  INFO [pool-2-thread-9] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 2152
+27/10/2016 10:47:14  INFO [pool-2-thread-3] Command: Get Tree Value, SerialNumber=(null), Success. Execute time: 2152ms
+27/10/2016 10:47:14  INFO [pool-2-thread-3] ServiceConfigGateway: DEFAULT GATE IP: (null)
+27/10/2016 10:47:14  INFO [pool-2-thread-3] ServiceConfigGateway: DEFAULT GATE IP: (null)
+27/10/2016 10:47:14  INFO [pool-2-thread-3] ServiceConfigGateway: configDefautGateway: veip0.8, sn= (null)
+27/10/2016 10:47:14  INFO [pool-2-thread-3] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477540034125
+27/10/2016 10:47:14  INFO [pool-2-thread-3] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:47:14  INFO [pool-2-thread-3] Command: Set Value, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:47:14  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:47:14  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:47:14  WARN [pool-2-thread-10] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:47:14  INFO [pool-2-thread-10] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:47:14  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:47:14  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:47:14  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:47:14  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:47:14  INFO [pool-2-thread-12] ACSServlet: [SetParameterResposne] Status 0
+27/10/2016 10:47:14  INFO [pool-2-thread-12] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 662
+27/10/2016 10:47:14  INFO [pool-2-thread-3] Command: Set Value, SerialNumber=(null), Success. Execute time: 662ms
+27/10/2016 10:47:14  INFO [pool-2-thread-3] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477540034788
+27/10/2016 10:47:16  INFO [pool-2-thread-3] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:47:16  INFO [pool-2-thread-3] Command: Reboot Device, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:47:16  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:47:16  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:47:16  WARN [pool-2-thread-13] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:47:16  INFO [pool-2-thread-13] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:47:16  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:47:16  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:47:16  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:47:16  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:47:16  INFO [pool-2-thread-15] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 1953
+27/10/2016 10:47:16  INFO [pool-2-thread-3] Command: Reboot Device, SerialNumber=(null), Success. Execute time: 1953ms
+27/10/2016 10:47:16  INFO [pool-2-thread-3] ACSServlet: [Disable wifi vionaphone] TIME  = 20944
+27/10/2016 10:47:50  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:47:50  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  5
+27/10/2016 10:47:50  WARN [pool-2-thread-16] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:47:50  INFO [pool-2-thread-16] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:47:50  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:47:50  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:47:50  INFO [pool-2-thread-17] ACSServlet:  ....  commadnkey for mboot SET_GATEWAY
+27/10/2016 10:47:50  INFO [pool-2-thread-17] ACSServlet: BOOT: Update device info, serialNumber=(null)
+27/10/2016 10:47:50  INFO [pool-2-thread-17] ACSServlet: 1 BOOT, SN=(null), MANU=Broadcom, Update exists device !
+27/10/2016 10:47:50  INFO [pool-2-thread-17] ACSServlet: [Disable wifi vinaphone]Start get parameter
+27/10/2016 10:47:50  INFO [pool-2-thread-17] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.]
+27/10/2016 10:47:50  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:47:50  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:47:59  INFO [pool-2-thread-18] ACSServlet: [Disable wifi vinaphone] Start parse result
+27/10/2016 10:47:59  INFO [pool-2-thread-18] ACSServlet: [Disable wifi vinaphone] path null
+27/10/2016 10:47:59  INFO [pool-2-thread-18] ACSServlet: Device is set gateway and reboot
+27/10/2016 10:47:59  INFO [pool-2-thread-18] ACSServlet: [Disable wifi vionaphone] TIME  = 1
+27/10/2016 10:49:16  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:49:16  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  2
+27/10/2016 10:49:16  WARN [pool-2-thread-19] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:49:16  INFO [pool-2-thread-19] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:49:16  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:49:16  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:49:16  INFO [pool-2-thread-20] ACSServlet:  ....  commadnkey for mboot null
+27/10/2016 10:49:16  INFO [pool-2-thread-20] ACSServlet: BOOT: Update device info, serialNumber=(null)
+27/10/2016 10:49:16  INFO [pool-2-thread-20] ACSServlet: 1 BOOT, SN=(null), MANU=Broadcom, Update exists device !
+27/10/2016 10:49:16  INFO [pool-2-thread-20] ACSServlet: [Disable wifi vinaphone]Start get parameter
+27/10/2016 10:49:16  INFO [pool-2-thread-20] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.]
+27/10/2016 10:49:16  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:49:16  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:49:25  INFO [pool-2-thread-21] ACSServlet: [Disable wifi vinaphone] Start parse result
+27/10/2016 10:49:25  INFO [pool-2-thread-21] ACSServlet: [Disable wifi vinaphone] path null
+27/10/2016 10:49:25  INFO [pool-2-thread-21] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477540165187
+27/10/2016 10:49:25  INFO [pool-2-thread-21] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:49:25  INFO [pool-2-thread-21] Command: Get Tree Value, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:49:36  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:49:36  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  3
+27/10/2016 10:49:36  WARN [pool-2-thread-22] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:49:36  INFO [pool-2-thread-22] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:49:36  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:49:36  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:49:36  INFO [pool-2-thread-23] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.Layer2Bridging.]
+27/10/2016 10:49:37  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:49:37  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:49:40  INFO [pool-2-thread-24] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 15708
+27/10/2016 10:49:40  INFO [pool-2-thread-21] Command: Get Tree Value, SerialNumber=(null), Success. Execute time: 15709ms
+27/10/2016 10:49:40  INFO [pool-2-thread-21] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477540180897
+27/10/2016 10:49:40  INFO [pool-2-thread-21] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:49:40  INFO [pool-2-thread-21] Command: Get Tree Value, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:49:40  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:49:40  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:49:41  WARN [pool-2-thread-25] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:49:41  INFO [pool-2-thread-25] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:49:41  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:49:41  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:49:41  INFO [pool-2-thread-26] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.3.X_BROADCOM_COM_IfName][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.2.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.ExternalIPAddress][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.1.X_BROADCOM_COM_IfName][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.3.WlIfcname][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.2.WlIfcname][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.1.WlIfcname][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.4.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.2.ExternalIPAddress][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.4.WlIfcname][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.1.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.4.ExternalIPAddress]
+27/10/2016 10:49:41  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:49:41  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:49:42  INFO [pool-2-thread-27] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 2059
+27/10/2016 10:49:42  INFO [pool-2-thread-21] Command: Get Tree Value, SerialNumber=(null), Success. Execute time: 2063ms
+27/10/2016 10:49:42  INFO [pool-2-thread-21] ServiceConfigGateway: DEFAULT GATE IP: (null)
+27/10/2016 10:49:42  INFO [pool-2-thread-21] ServiceConfigGateway: DEFAULT GATE IP: (null)
+27/10/2016 10:49:42  INFO [pool-2-thread-21] ServiceConfigGateway: configDefautGateway: veip0.4, sn= (null)
+27/10/2016 10:49:42  INFO [pool-2-thread-21] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477540182961
+27/10/2016 10:49:42  INFO [pool-2-thread-21] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:49:42  INFO [pool-2-thread-21] Command: Set Value, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:49:42  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:49:42  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:49:43  WARN [pool-2-thread-28] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:49:43  INFO [pool-2-thread-28] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:49:43  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:49:43  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:49:43  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:49:43  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:49:43  INFO [pool-2-thread-30] ACSServlet: [SetParameterResposne] Status 0
+27/10/2016 10:49:43  INFO [pool-2-thread-30] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 617
+27/10/2016 10:49:43  INFO [pool-2-thread-21] Command: Set Value, SerialNumber=(null), Success. Execute time: 617ms
+27/10/2016 10:49:43  INFO [pool-2-thread-21] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477540183578
+27/10/2016 10:49:44  INFO [pool-2-thread-21] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:49:44  INFO [pool-2-thread-21] Command: Reboot Device, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:49:45  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:49:45  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:49:45  WARN [pool-2-thread-31] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:49:45  INFO [pool-2-thread-31] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:49:45  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:49:45  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:49:45  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:49:45  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:49:45  INFO [pool-2-thread-33] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 1992
+27/10/2016 10:49:45  INFO [pool-2-thread-21] Command: Reboot Device, SerialNumber=(null), Success. Execute time: 1992ms
+27/10/2016 10:49:45  INFO [pool-2-thread-21] ACSServlet: [Disable wifi vionaphone] TIME  = 20439
+27/10/2016 10:50:19  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:50:19  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  2
+27/10/2016 10:50:19  WARN [pool-2-thread-34] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:50:19  INFO [pool-2-thread-34] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:50:19  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:50:19  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:50:19  INFO [pool-2-thread-35] ACSServlet:  ....  commadnkey for mboot SET_GATEWAY
+27/10/2016 10:50:19  INFO [pool-2-thread-35] ACSServlet: BOOT: Update device info, serialNumber=(null)
+27/10/2016 10:50:19  INFO [pool-2-thread-35] ACSServlet: 1 BOOT, SN=(null), MANU=Broadcom, Update exists device !
+27/10/2016 10:50:19  INFO [pool-2-thread-35] ACSServlet: [Disable wifi vinaphone]Start get parameter
+27/10/2016 10:50:19  INFO [pool-2-thread-35] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.]
+27/10/2016 10:50:19  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:50:19  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:50:28  INFO [pool-2-thread-36] ACSServlet: [Disable wifi vinaphone] Start parse result
+27/10/2016 10:50:28  INFO [pool-2-thread-36] ACSServlet: [Disable wifi vinaphone] path null
+27/10/2016 10:50:28  INFO [pool-2-thread-36] ACSServlet: Device is set gateway and reboot
+27/10/2016 10:50:28  INFO [pool-2-thread-36] ACSServlet: [Disable wifi vionaphone] TIME  = 1
+27/10/2016 10:53:49  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:53:49  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  3
+27/10/2016 10:53:49  WARN [pool-2-thread-37] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:53:49  INFO [pool-2-thread-37] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:53:49  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:53:49  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:53:49  INFO [pool-2-thread-38] ACSServlet:  ....  commadnkey for mboot null
+27/10/2016 10:53:49  INFO [pool-2-thread-38] ACSServlet: BOOT: Update device info, serialNumber=(null)
+27/10/2016 10:53:49  INFO [pool-2-thread-38] ACSServlet: 1 BOOT, SN=(null), MANU=Broadcom, Update exists device !
+27/10/2016 10:53:49  INFO [pool-2-thread-38] ACSServlet: [Disable wifi vinaphone]Start get parameter
+27/10/2016 10:53:49  INFO [pool-2-thread-38] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.]
+27/10/2016 10:53:49  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:53:49  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:53:58  INFO [pool-2-thread-39] ACSServlet: [Disable wifi vinaphone] Start parse result
+27/10/2016 10:53:58  INFO [pool-2-thread-39] ACSServlet: [Disable wifi vinaphone] path null
+27/10/2016 10:53:58  INFO [pool-2-thread-39] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477540438140
+27/10/2016 10:53:58  INFO [pool-2-thread-39] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:53:58  INFO [pool-2-thread-39] Command: Get Tree Value, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:54:09  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:54:09  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  3
+27/10/2016 10:54:09  WARN [pool-2-thread-40] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:54:09  INFO [pool-2-thread-40] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:54:09  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:54:09  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:54:09  INFO [pool-2-thread-41] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.Layer2Bridging.]
+27/10/2016 10:54:09  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:54:09  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:54:13  INFO [pool-2-thread-42] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 15123
+27/10/2016 10:54:13  INFO [pool-2-thread-39] Command: Get Tree Value, SerialNumber=(null), Success. Execute time: 15123ms
+27/10/2016 10:54:13  INFO [pool-2-thread-39] CommandRequestFactory: Add command: SerialNumber=(null), CurrentTime: 1477540453264
+27/10/2016 10:54:13  INFO [pool-2-thread-39] AuthChallengeProcessor: digest authentication scheme selected
+27/10/2016 10:54:13  INFO [pool-2-thread-39] Command: Get Tree Value, SerialNumber=(null)::admin/admin, Command waiting for (ms): 60000ms
+27/10/2016 10:54:13  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:54:13  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:54:13  WARN [pool-2-thread-43] Message: SOAPElement not Found: MACAddress
+27/10/2016 10:54:13  INFO [pool-2-thread-43] ACSServlet: oui=a06518 sn=(null) oui=a06518, sn=(null), URL=http://10.2.8.203:30005/, hw=tmp_hardware1.0, sw=G6.16A.03RTM, cfg=null, ProvisioningCode=
+27/10/2016 10:54:13  INFO [qtp32869172-20 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-20 - /::ID=20
+27/10/2016 10:54:13  INFO [qtp32869172-20 - /] ACSServlet: time doPost put to thread pool:  0
+27/10/2016 10:54:13  INFO [pool-2-thread-44] Message: GetParameterValues: PARAMETER_NAME=[InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.3.X_BROADCOM_COM_IfName][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.2.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.2.ExternalIPAddress][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.1.X_BROADCOM_COM_IfName][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.3.WlIfcname][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.2.WlIfcname][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.1.WlIfcname][InternetGatewayDevice.LANDevice.1.LANEthernetInterfaceConfig.4.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.3.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.3.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.3.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.3.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANPPPConnection.3.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.1.ExternalIPAddress][InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_BROADCOM_COM_WlanAdapter.WlVirtIntfCfg.4.WlIfcname][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.5.ExternalIPAddress][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.Name][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.ConnectionType][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.X_BROADCOM_COM_VlanMuxID][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.X_BROADCOM_COM_IfName][InternetGatewayDevice.WANDevice.5.WANConnectionDevice.1.WANIPConnection.3.ExternalIPAddress]
+27/10/2016 10:54:14  INFO [qtp32869172-19 - /] ACSServlet: AsyncLongRunningServlet Start::Name=qtp32869172-19 - /::ID=19
+27/10/2016 10:54:14  INFO [qtp32869172-19 - /] ACSServlet: time doPost put to thread pool:  1
+27/10/2016 10:54:15  INFO [pool-2-thread-45] CommandRequestFactory: Remove command: SerialNumber=(null), TimeExist: 1799
+27/10/2016 10:54:15  INFO [pool-2-thread-39] Command: Get Tree Value, SerialNumber=(null), Success. Execute time: 1802ms
+27/10/2016 10:54:15  INFO [pool-2-thread-39] ServiceConfigGateway: DEFAULT GATE IP: 
+27/10/2016 10:54:15  WARN [pool-2-thread-39] ACSServlet: ChangeDefaultGateway fail, cant find default interface
+27/10/2016 10:54:15  INFO [pool-2-thread-39] ACSServlet: [Disable wifi vionaphone] TIME  = 16989

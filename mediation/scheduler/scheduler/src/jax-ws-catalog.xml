@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://tr069.stbnms:9000/acsService?wsdl" uri="wsdl/tr069.stbnms_9000/acsService.wsdl"/>
+    <system systemId="http://tr069.stbnms:9000/acsService?xsd=1" uri="wsdl/tr069.stbnms_9000/acsService.xsd_1.xsd"/>
+    <system systemId="http://10.84.8.62:82/acsService?wsdl" uri="wsdl/10.84.8.62_82/acsService.wsdl"/>
+    <system systemId="http://10.84.8.62:82/acsService?xsd=1" uri="wsdl/10.84.8.62_82/acsService.xsd_1.xsd"/>
+    <system systemId="http://stbnms-acs:82/acsService?wsdl" uri="wsdl/stbnms-acs_82/acsService.wsdl"/>
+    <system systemId="http://stbnms-acs:82/acsService?xsd=1" uri="wsdl/stbnms-acs_82/acsService.xsd_1.xsd"/>
+</catalog>
